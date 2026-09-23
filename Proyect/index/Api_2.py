@@ -1,14 +1,12 @@
 import psycopg2   
 import csv
 
-# Database connection parameters
 DB_HOST = 'localhost'
 DB_NAME = 'project'
 DB_USER = 'postgres'
 DB_PASSWORD = '12345'
 DB_PORT = '5432'
 
-# Function to connect to PostgreSQL
 def connect_to_db():
     return psycopg2.connect(
         host=DB_HOST,
@@ -18,21 +16,17 @@ def connect_to_db():
         port=DB_PORT
     )
 
-# Main function to ingest data
 def ingest_data():
-    # Connect to PostgreSQL
     conn = connect_to_db()
     cur = conn.cursor()
 
-    # Open the CSV file
-    with open(r'C:\Users\valen13\Downloads\Prueba Tecnica\Api\src\data.csv', 'r') as file:
+    with open(r'C:\Users\valen13\Downloads\Prueba Tecnica\Proyect\src\data.csv', 'r') as file:
         data_reader = csv.DictReader(file, delimiter=";")
         data_reader.fieldnames = [
            campo.strip()
            for campo in data_reader.fieldnames
         ]
 
-        # Insert each row into the table
         for row in data_reader:
             print(row)
             print(len(row))
@@ -45,7 +39,6 @@ def ingest_data():
                              row["telefono"]
                           )
                         )
-    # Commit and close the connection
     conn.commit()
     cur.close()
     conn.close()
