@@ -167,10 +167,7 @@ Antes de realizar la inserción:
 
 resultado:
 
-
-
-
-
+![Image Alt](https://github.com/kevin12220/Prueba-Ingeniero-De-Datos/blob/master/Proyect/images/inserccion.png?raw=truee)
 
 Actualización:
 
@@ -180,14 +177,13 @@ UPDATE users
 SET telefono = '888888'
 WHERE id = 3;
 
-
+![Image Alt](https://github.com/kevin12220/Prueba-Ingeniero-De-Datos/blob/master/Proyect/images/actualizacion.png?raw=true)
 
 Busquedas:
 
 Se realiza el filtro en la misma tabla users donde muestra los id mayores a 10.
 
-
-
+![Image Alt](https://github.com/kevin12220/Prueba-Ingeniero-De-Datos/blob/master/Proyect/images/filtro.png?raw=true)
 
 
 EXTRA:
