@@ -9,7 +9,7 @@ if response.status_code == 200:
 
     print(f"Total de registros: {len(users)}")
 
-    for post in users[:7]:
+    for post in users[:6]:
         print(f"ID: {post['id']}")
         print(f"Título: {post['title']}")
         print(f"Contenido: {post['body']}")
