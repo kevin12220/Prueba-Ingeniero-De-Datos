@@ -163,7 +163,7 @@ VALUES (
 
 Antes de realizar la inserción:
 
-
+images/inicial.png
 
 
 
