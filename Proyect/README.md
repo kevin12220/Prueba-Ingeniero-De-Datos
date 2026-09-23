@@ -165,7 +165,7 @@ Antes de realizar la inserción:
 
 images/inicial.png
 
-
+https://github.com/kevin12220/Prueba-Ingeniero-De-Datos/blob/22dcaf32b1a3c4408ae689c58ed3e444c3c7720b/Proyect/images/Inicial.png
 
 resultado:
 
